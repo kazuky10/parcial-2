@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300&display=swap');
+
+:root {
+    --primary: #0D6EFD;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.01);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+    color: var(--dark);
+    font-weight: 600;
+
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .logo {
+    width: 160px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#menu li>a {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+}
+
+#menu form>button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.d-item {
+    height: 500px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+.slide img {
+    max-height: 650px;
+}
+
+
+#local {
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#feedlife, #cuidamos {
+    color: #046635;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+#numeros div {
+    height: 90px;
+}
+
+#numeros {
+    gap: 1rem;
+}
+#video {
+    max-width: 800px;
+}
+
+#numeros p {
+    margin: 0;
+
+}
+
+#contactos {
+    min-height: 500px;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+#contenedor-formulario {
+    background: #E8E8E6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#titulo-formulario {
+    color: gray;
+}
+
+#numeros div:not(:first-child) {
+    padding-left: 20px;
+}
+
+#numeros div:not(:last-child) {
+    border-right: 2px solid gray;
+    padding-right: 15px;
+}
+
+/* Media queries */
+
+@media (max-width:1200px) {
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+    #intro,
+    #equipo {
+        width: 90% !important;
+    }
+
+    .local {
+        padding-bottom: 150px;
+    }
+
+    .pastilla-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #bg-contactos {
+
+        top: -110px;
+    }
+
+    #numeros {
+        flex-direction: row;
+    }
+
+    #numeros div {
+        padding: 0 20px 0 0;
+        height: 90px;
+    }
+
+    #numeros div:not(:last-child) {
+        border-right: none;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    #ocultar-texto {
+        display: none;
+    }
+
+    #numeros {
+        flex-direction: column;
+    }
+
+    #numeros div {
+        padding: 0;
+    }
+
+    #numeros div:not(:first-child) {
+        padding-left: 0;
+    }
+
+    #numeros div:not(:last-child) {
+        border-right: none;
+    }
+}
+
+/*// Media queries */
+
+footer {
+    background:  #046635;
+    min-height: 100px;
+
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+#iconos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: white;
+}
+
+section {
+    scroll-margin-top: 68px;
+}
+
